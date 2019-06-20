@@ -2,12 +2,12 @@ package com.androiddreams.findbooks;
 
 public class Book {
 
-    private String mTitle, mSubtitle, mAuthor, mPublisher, mRating;
+    private String mTitle, mSubtitle, mAuthors, mPublisher, mRating;
 
     public Book(String title, String subtitle, String author, String publisher, String rating) {
         mTitle = title;
         mSubtitle = subtitle;
-        mAuthor = author;
+        mAuthors = author;
         mPublisher = publisher;
         mRating = rating;
     }
@@ -20,8 +20,8 @@ public class Book {
         return mSubtitle;
     }
 
-    public String getmAuthor() {
-        return mAuthor;
+    public String getmAuthors() {
+        return mAuthors;
     }
 
     public String getmPublisher() {

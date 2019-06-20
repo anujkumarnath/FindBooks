@@ -14,14 +14,7 @@ public class BooksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_books);
 
-        ArrayList<Book> books = new ArrayList<>();
-        books.add(new Book("Python Machine Learning", "A Guide for Data Scientists", "Andreas C. Müller, Sarah Guido", "O'Reilly Media, Inc.", "4.5"));
-        books.add(new Book("Python Machine Learning", "A Guide for Data Scientists", "Andreas C. Müller, Sarah Guido", "O'Reilly Media, Inc.", "4.5"));
-        books.add(new Book("Python Machine Learning", "A Guide for Data Scientists", "Andreas C. Müller, Sarah Guido", "O'Reilly Media, Inc.", "4.5"));
-        books.add(new Book("Python Machine Learning", "A Guide for Data Scientists", "Andreas C. Müller, Sarah Guido", "O'Reilly Media, Inc.", "4.5"));
-        books.add(new Book("Python Machine Learning", "A Guide for Data Scientists", "Andreas C. Müller, Sarah Guido", "O'Reilly Media, Inc.", "4.5"));
-        books.add(new Book("Python Machine Learning", "A Guide for Data Scientists", "Andreas C. Müller, Sarah Guido", "O'Reilly Media, Inc.", "4.5"));
-        books.add(new Book("Python Machine Learning", "A Guide for Data Scientists", "Andreas C. Müller, Sarah Guido", "O'Reilly Media, Inc.", "4.5"));
+        ArrayList<Book> books = QueryUtils.readItemsFromJson();
 
         ListView listView = findViewById(R.id.listView);
         BookAdapter bookAdapter = new BookAdapter(this, books);

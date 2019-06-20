@@ -29,7 +29,7 @@ public class BookAdapter extends ArrayAdapter<Book> {
         Book book = getItem(position);
         tvTitle.setText(book.getmTitle());
         tvSubtitle.setText(book.getmSubtitle());
-        tvAuthor.setText(book.getmAuthor());
+        tvAuthor.setText(book.getmAuthors());
         tvPublisher.setText(book.getmPublisher());
         tvRating.setText(book.getmRating());
 
